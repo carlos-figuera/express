@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "762935095871",
+    "firebase_url": "https://exprescadetes.firebaseio.com",
+    "project_id": "exprescadetes",
+    "storage_bucket": "exprescadetes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762935095871:android:b4cf86412265c877",
+        "android_client_info": {
+          "package_name": "com.expres_cadetes_espartadev.expres_cadetes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762935095871-an63a4r2i0ti5kc7v7dkafcpq54c21ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.expres_cadetes_espartadev.expres_cadetes",
+            "certificate_hash": "4b1a59c79870419255d39f829e7f5d62b056b26d"
+          }
+        },
+        {
+          "client_id": "762935095871-5jprcjpmrggmvc1imuk61rq92d9gur59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrS7Znjmj5ieHlbESQGVi0cJBck1feVI8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762935095871-5jprcjpmrggmvc1imuk61rq92d9gur59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

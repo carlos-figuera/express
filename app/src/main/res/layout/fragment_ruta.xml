@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aplicación="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos_cadetes.Rutas.Crear_Ruta">
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:touchscreenBlocksFocus="true">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/PARTE2"
+            android:layout_below="@+id/PARTE1"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:touchscreenBlocksFocus="false"
+            aplicación:layout_heightPercent="80%"
+            aplicación:layout_widthPercent="100%">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Rv_Rutas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PARTE3"
+            android:layout_below="@+id/PARTE2"
+            android:layout_marginHorizontal="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="1dp"
+            android:touchscreenBlocksFocus="false"
+            aplicación:layout_heightPercent="25%"
+            aplicación:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/Btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Guadar"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/text_json"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ffffff"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</FrameLayout>

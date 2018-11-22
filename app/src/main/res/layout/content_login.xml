@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:aplicación="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Vistas.Login"
+    tools:showIn="@layout/activity_login"
+    android:orientation="vertical">
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:touchscreenBlocksFocus="true">
+
+
+        <LinearLayout
+            android:id="@+id/PARTE0"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            aplicación:layout_heightPercent="25%"
+            aplicación:layout_widthPercent="100%">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elevation="1dp"
+                android:padding="1dp"
+                android:src="@mipmap/logos" />
+            <Spinner
+                android:id="@+id/Sp_tipo_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/ThemeOverlay.AppCompat.Dark"
+                android:popupBackground="#9b9797"
+                android:background="#e6dcdc"
+                android:layout_weight="5"
+                android:visibility="gone">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/txt_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="url...."
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/PARTE1"
+            android:layout_below="@+id/PARTE0"
+            android:layout_marginHorizontal="16dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:touchscreenBlocksFocus="false"
+            aplicación:layout_heightPercent="60%"
+            aplicación:layout_widthPercent="100%">
+
+
+            <ScrollView
+                android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="2dp"
+                android:layout_marginHorizontal="10dp">
+
+                <LinearLayout
+                    android:id="@+id/p"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="1dp">
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/email"
+                            android:elevation="1dp"
+                            android:hint=" Correo"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="1dp">
+
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pass"
+                            android:elevation="1dp"
+                            android:hint=" Contraseña"
+                            android:imeActionId="6"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/Txt_recuperar_contrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center"
+                        android:text="¿Olvidaste tu contraseña?" />
+
+
+                    <Button
+                        android:id="@+id/Btn_ingresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_weight="1"
+                        android:elevation="10dp"
+                        android:text="Ingresar "
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/PARTE2"
+            android:layout_below="@+id/PARTE1"
+            android:layout_marginHorizontal="16dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:touchscreenBlocksFocus="false"
+            aplicación:layout_heightPercent="20%"
+            aplicación:layout_widthPercent="100%">
+
+
+            <TextView
+                android:id="@+id/Txt_Terminos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Terminos y condiciones" />
+
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

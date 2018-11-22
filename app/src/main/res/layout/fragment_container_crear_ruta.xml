@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aplicación="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragmentos_cadetes.Rutas.container_crear_ruta"
+    android:orientation="vertical">
+
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:touchscreenBlocksFocus="true">
+
+
+        <LinearLayout
+            android:id="@+id/PARTE0"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            aplicación:layout_heightPercent="7%"
+            aplicación:layout_widthPercent="100%">
+            <LinearLayout
+                android:id="@+id/L_mapa"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+                <TextView
+                    android:id="@+id/txt_Mapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Mapa"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_linea_mapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/L_Ruta"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/txt_Ruta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Ruta"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_linea_ruta"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:visibility="invisible"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/PARTE1"
+            android:layout_below="@+id/PARTE0"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:touchscreenBlocksFocus="false"
+            aplicación:layout_heightPercent="90%"
+            aplicación:layout_widthPercent="100%">
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>
